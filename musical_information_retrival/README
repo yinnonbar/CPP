@@ -1,0 +1,19 @@
+Yinnon Bratspiess
+A musical infromation retrival program. provides gettting information about songs
+in the system
+Design :
+	My code consists a base class of songs which called Song. this base class is match to a type of 
+	an abstract song which defines some attributes that fits to all kind of songs in this ex.
+	There are two derives classes that inheritance from Song.
+	the first is InstrumentalSong which is a song that has no lyrics and the second is Lyrical song
+	which is a song who has lyrics.
+	I decided to implement it that way because Song is a general father type and has attributes
+	that any song has such as title or tags match score, but for every type of song given in the ex
+	there are some uniques attributes such as instruments match score or lyrics.
+	Beside of those I have namespace Parser which functions as a static class deals only with 
+	parsing the three given files.
+	Parameters class is a class that having all the given parameters as given in the parameters 
+	file. it has setters and getters for every parameter in it which are saved as private for
+	encapsulation.
+	Finally MIR.cpp is the driver for the program. implementing the sort as given in SortHelper
+	and prints the results per query.
